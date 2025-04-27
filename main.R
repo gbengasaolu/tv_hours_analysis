@@ -3,6 +3,7 @@ library(here)
 library(dplyr)
 
 gss_cat
+<<<<<<< Updated upstream
 
 
 tv_hours_table <- gss_cat %>%
@@ -10,6 +11,8 @@ tv_hours_table <- gss_cat %>%
   group_by(marital) %>%
   summarise(mean_tv_hours=mean(tvhours, na.rm = T))
 
+=======
+>>>>>>> Stashed changes
 
 tv_hours_table <- gss_cat%>%
   filter(age>=30) %>%
